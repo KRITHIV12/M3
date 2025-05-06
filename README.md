@@ -14,32 +14,37 @@ To write a program to prepare EMI calculator using function without return type 
 6.	Stop the program.
 
 ## PROGRAM
-#include <iostream>
-#include <cmath>
-using namespace std;
-void calculateEMI(float principal, float rate, int months) {
-float r = rate / (12 * 100);  
-float emi = (principal * r * pow(1 + r, months)) / (pow(1 + r, months) - 1);
-cout << "EMI = " << emi << endl;
+#include <stdio.h>
+#include <math.h>
+void calculate_emi(float principal, float rate_of_interest, int months) {
+float r = rate_of_interest / (12 * 100);
+int t = months;
+float emi = (principal * r * pow(1 + r, t)) / (pow(1 + r, t) - 1);
+printf("The EMI for the loan is: %.2f\n", emi);
 }
-int main() {
-float principal, rate;
-int months;
-cout << "Enter Principal Amount: ";
-cin >> principal;
-cout << "Enter Annual Interest Rate (%): ";
-cin >> rate;
-cout << "Enter Number of Months: ";
-cin >> months;
-calculateEMI(principal, rate, months);
-return 0;
+int main() 
+{
+    float principal, rate_of_interest;
+    int months;
+
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    
+    printf("Enter the annual rate of interest (in %%): ");
+    scanf("%f", &rate_of_interest);
+    
+    printf("Enter the number of months: ");
+    scanf("%d", &months);
+
+    calculate_emi(principal, rate_of_interest, months);
+
+    return 0;
 }
 
+
 ## OUTPUT
-Enter Principal Amount: 100000
-Enter Annual Interest Rate (%): 10
-Enter Number of Months: 12
-EMI = 8791.5
+![Screenshot 2025-05-06 161737](https://github.com/user-attachments/assets/79330c11-bb79-4e93-b011-cf866b5a4354)
+
 
 ## RESULT
 
@@ -80,8 +85,7 @@ return 0;
 }
 
 ## OUTPUT
-Fibonacci Series for 6 terms:
-0 1 1 2 3 5
+![Screenshot 2025-05-06 161847](https://github.com/user-attachments/assets/9a5f2959-ad19-4581-9284-a5d934a7ef53)
 
 ## RESULT
 Thus the program to generate the Fibonacci series for the value 6 has been executed successfully.
