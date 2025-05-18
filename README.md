@@ -119,9 +119,8 @@ return 0;
 }
 
 ## OUTPUT
-n : 5
-i:10 20 30 40 50
-Last element = 50
+![Screenshot 2025-05-18 101552](https://github.com/user-attachments/assets/9cf337db-228c-41e2-9ded-2ecdd1cdc44e)
+
 
 ## RESULT
 Thus the program to read n elements as input and print the last element of the array has been executed successfully.
@@ -161,8 +160,8 @@ return 0;
 }
 
 ## OUTPUT
-n: 1 -2 3 0 4
-Total number of positive elements = 3
+![Screenshot 2025-05-18 103428](https://github.com/user-attachments/assets/57dc348f-6332-403a-9b47-ea14c97fd736)
+
 
 
 ## RESULT
@@ -213,9 +212,7 @@ return 0;
 }
 
 ## Output:
-n:1 2 3 4 5
-Updated array:
-1 E 3 E 5
+![Screenshot 2025-05-18 103808](https://github.com/user-attachments/assets/cec5ef22-bc65-4de7-8e89-70fd0b3b1bc7)
 
 ## Result:
 
